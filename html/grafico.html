@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Dashboard Bob Pepper </title>
+	<script src="https://www.chartjs.org/dist/2.9.3/Chart.min.js"></script>
+	<script src="https://www.chartjs.org/samples/latest/utils.js"></script>
+	<script src="../js/grafico.js"></script>
+
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Bob Pepper</title>
+	<link rel="stylesheet" href="../css/style.css" />
+	<link rel="stylesheet" href="../css/style1.css" />
+	<link rel="stylesheet" href="../css/style2.css" />
+	<link rel="stylesheet" href="../css/graficos.css" />
+	<link rel="icon" href="../img/logo.png" type="imagem-x/icon">
+</head>
+<body>
+	<nav role="navigation">
+		
+		<div id="menuToggle">
+			<!--checkbox escondida para se selecionar o menu hamburguer e ter o efeito de "abrir"-->
+			<input type="checkbox" />
+			  
+			<span></span> <!--Area para criar o menu hamburguer esses spans serão utilizados para a estilização-->
+			<span></span>
+			<span></span>
+			  
+		
+			<ul id="menu"><!--  criação da lista para os items do menu -->
+				<a href="#">
+					<li><img src="../img/cad-branco.png" class="icone"> Cadastro de Usuário</li>
+				</a>
+				<a href="#">
+					<li><img src="../img/planta.png" class="icone"> Cadastro de Plantio</li>
+				</a>
+				<a href="#">
+					<li><img src="../img/lembretes.png" class="icone"> Lembretes</li>
+				</a>
+				<a href="#">
+					<li><img src="../img/temperatura.png" class="icone"> Registros de Temperatura</li>
+				</a>
+				<a href="login.html">
+					<li><img src="../img/sair.png" class="icone"> Sair</li>
+				</a>
+				<img src="../img/logo.png" width='50%' alt="" class="logo">
+			</ul>
+		</div>
+	</nav>
+	
+	<div class="content">
+		<div class="container">
+			<div class="temperatura_e_alerta">
+				<h2>Temperatura atual:</h2>
+				<b>
+					<p id="textinho" class="texto_alerta">
+						Carregando...
+					</p>
+				</b>
+			</div>
+
+			<div class="alertas">
+				<h3>Alertas de temperatura</h3>
+				<p id="temp_minima_historico">Última temperatura mínima excedida: </p>
+				<p id="temp_max_historico">Última temperatura máxima excedida: </p>
+
+			</div>
+
+			<div class="grafico_principal">  
+				<h1>Gráfico Principal</h1>
+		<!-- Tag para estilizar e normalizar o gráfico criado -->
+				<style>  
+					canvas {
+						-moz-user-select: none;
+						-webkit-user-select: none;
+						-ms-user-select: none;
+						/* controla a aparência ao selecionar nos navegadores citados */
+					}
+				</style>
+				</head>
+
+				<body>
+					<div style="width:100%;"> <!-- div para o gráfico e sua largura -->
+						<canvas id="c_grafico"></canvas> <!--  o gráfico está aqui  -->
+					</div>
+					<br>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer">
+		<p>Copyright © 2020 | OportunnIT</p>
+	</div>
+</body>
+
+</html>
+
+
+
+<!-- CRÉDITOS E COPYRIGHT
+Ícones feitos por <a href="https://www.flaticon.com/br/autores/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/br/" title="Flaticon"> www.flaticon.com</a>
+
+Ícones feitos por <a href="https://www.flaticon.com/br/autores/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/br/" title="Flaticon"> www.flaticon.com</a>
+
+-->

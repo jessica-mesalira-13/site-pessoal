@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Locadora Oscar</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/style1.css" />
+    <script src="../js/validacoes.js"></script>
+    <link rel="icon" href="../img/logo.png" type="imagem-x/icon">
+</head>
+
+<body class="fundo">
+    <div class="header">
+        <div class="container">
+            <div>
+                <img class="titulo" src="../img/popcorn.png" width="80px">
+                <h1 class="titulo"> Locadora <span>Oscar</span></h1>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="./contato.html">Contato</a></li>
+                    <li><a href="./sobre.html">Sobre</a></li>
+                    <li><a href="./login.html">Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="formulario">
+        <div class="container">
+            <div class="login">
+                <form>
+                    <img src="../img/popcorn.png" width="80px" class="logo-login">
+
+                    <ul class="form-style-1">
+                        <li>
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email_usu" class="large-field" placeholder="exemplo@locadoraoscar.com" required />
+                        </li>
+                    </ul>
+
+                    <ul class="form-style-1">
+                        <li>
+                            <label for="senha">Senha</label>
+                            <input type="password" name="senha" id="senha_usu" class="large-field" placeholder="Senha" required />
+                        </li>
+                    </ul>
+                    <br>
+                    <div class="btn-enviar">
+                        <button class="btn first" onclick="verificar_usuario();">Logar</button>
+                    </div>
+
+                    Não possui Cadastro? <a href="cadastro.html">Cadastre-se!</a>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">    
+        <p>Copyright © 2020 | Jéssica Mesalira</p>
+    </div>
+</body>
+</html>
